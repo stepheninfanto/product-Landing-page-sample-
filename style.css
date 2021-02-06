@@ -1,0 +1,244 @@
+/** global element styling **/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background-color:cyan 2;
+  font-family: 'Lato', sans-serif;   
+/*    #eee; */  
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;   
+  padding:10px 50px;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#eee;
+  z-index:1000;
+}
+
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo >h1> img {  
+  max-height:50px;
+  width: auto;
+  height: auto;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  border:1px solid; 
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px;   
+  }
+  nav > ul > li {
+    padding-bottom: 5px;
+    border:5px solid black;
+  }
+}
+ nav > ul > li {
+   margin:10px;
+
+}
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+.image { 
+height: 500px;
+    background: url(//i01.appmifile.com/webfile/globalimg/products/pc/mi-mix-alpha/index_01.jpg) center no-repeat;
+    background-size: 100% 100%;  
+    margin-bottom: -1px;
+}
+.image2{
+     height: 500px;
+    background: url(//i01.appmifile.com/webfile/globalimg/products/pc/mi-mix-alpha/index_101.jpg) center no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+#Specifications {
+  margin-top: 30px;
+   height: 500px;
+    background: url(//i01.appmifile.com/webfile/globalimg/products/pc/mi-mix-alpha/index_31.jpg) center no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: -1px;
+    color:white;
+    
+}
+.specBox{
+  text-align:left; 
+  position:relative;
+  left:25px;  
+}
+
+#underTheHood {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#underTheHood > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+    height: 500px;   
+    background: url(//i01.appmifile.com/webfile/globalimg/products/pc/mi-mix-alpha/index_31.jpg) center no-repeat;
+    background-size: 100% 100%;   
+    margin-bottom: -1px;
+}
+
+.productprice { 
+  position: relative; 
+  left:25px;
+  padding:70px; 
+}
+
+#glimpseOfFuture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#glimpseOfFuture > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#glimpseOfFuture input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#glimpseOfFuture input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#glimpseOfFuture input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #glimpseOfFuture {
+    margin-top: 120px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
